@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="icon" href="Screenshot 2022-07-31 002214.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main id="main">
+        <h1>Put in your desired password length below:</h1>
+        <input type="number" name="number" id="passLength" min="1" value="4">
+        <section>
+            <div>
+                <label for="letters">Contain Letters</label>
+                <input type="checkbox" name="letters" id="letters" checked="true">
+            </div>
+            <div>
+                <label for="numbers">Contain Numbers</label>
+                <input type="checkbox" name="numbers" id="numbers">
+            </div>
+            <div>
+                <label for="symbols">Contain Symbols</label>
+                <input type="checkbox" name="symbols" id="symbols">
+            </div>
+        </section>
+        <button id="passGenerator">Generate Password</button>
+        <p>Your new password is:<br><span id="passOutput" contenteditable="true" spellcheck="false"></span></p>
+        <!-- <button id="copyBtn">Copy Password</button> -->
+    </main>
+    <footer>
+        <p>You can edit the password by clicking on it</p>
+    </footer>
+</body>
+</html>
